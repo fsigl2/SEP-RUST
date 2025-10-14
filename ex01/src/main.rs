@@ -26,11 +26,16 @@ fn var_decl() {
 /// Ex.2ii
 fn data_types() {
     // Replace ??? with fitting data types
-    let a: ??? = 7;
-    let b: ??? = "Hello World";
-    let c: ??? = true;
+    let a: i32 = 7;
+    let b: &str = "Hello World";
+    let c: bool = true;
 
     // Use if...else to print b if c is True or a if c is not True
+    if c == true {
+        println!(b);
+    } else {
+        println!(a);
+    }
 }
 
 /// Ex.2iii
