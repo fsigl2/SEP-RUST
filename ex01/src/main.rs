@@ -50,7 +50,8 @@ fn mutability() {
 
 /// Ex.3a
 // Add another parameter y of the correct type and the correct return type
-fn add(x: i32, ???) -> ??? {
+fn add(x: i32, y: i32) -> i32 {
+    x+y
     // Return the sum of x and y (you can do it two different ways, but one is more idiomatic!)
 }
 
