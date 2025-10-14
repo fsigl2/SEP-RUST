@@ -61,6 +61,14 @@ fn add(x: i32, y: i32) -> Option<i32> {
 // Use a while loop to calculate the factorial of n
 // The factorial n! of n is defined like so:
 //   n! = n * (n - 1) * (n - 2) * ... * (n - (n - 1)) if n >= 1
+fn fac_while(mut n: i32) -> Option<i32> {
+    let mut res: i32 = 1;
+    while n > 1{
+        res *= (n);
+        n -= 1;
+    }
+    return Some(res);
+}
 
 /// Ex.3b(ii)
 // Use a for loop to write a 'fac_for' function, which does the same thing as your 'fac_while' function
