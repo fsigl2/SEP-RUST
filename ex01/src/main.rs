@@ -19,7 +19,7 @@
 /// Ex.2i
 fn var_decl() {
     // Add the missing keyword
-    x = 5;
+    let x = 5;
     println!("x = {x}");
 }
 
