@@ -86,8 +86,9 @@ fn fac_for(mut n: i32) -> Option<i32> {
 // https://rust-book.cs.brown.edu/ch06-02-match.html
 fn fac_rec(mut n: i32) -> i32 {
     match n {
+        0 => 1,
         1 => 1,
-        _ => n * fac_rec(n-1)
+        _ => n * fac_rec(n-1),
     }
     
 }
@@ -99,16 +100,31 @@ fn vec_basics() -> Vec<i32> {
     let arr: [i32; 5] = [1,2,3,4,5];
 
     // Create a Vec with the same elements that are in 'arr' (there are multiple ways)
+    let mut v = Vec::new();
+    for n in arr {
+        v.push(n);
+    }
+
+    let mut v2 = Vec::from(arr);
+
+    let mut v3 = arr.to_vec();
 
     // Add 6,7,8 to the end of v
+    v.push(6);
+    v.push(7);
+    v.push(8);
 
     // Remove the last number in v
+    v.pop();
 
     // Remove the number at index 3
+    v.remove(3);
 
     // Calculate the length of v and print it
+    println!("{}", v.len());
 
     // Return v
+    v
 }
 
 
