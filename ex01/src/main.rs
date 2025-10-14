@@ -84,10 +84,12 @@ fn fac_for(mut n: i32) -> Option<i32> {
 // Use recursion to write a 'fac_rec' function, which does the same thing as your 'fac_while' function
 // Try to use the match construct instead of if...else:
 // https://rust-book.cs.brown.edu/ch06-02-match.html
-fn fac_rec(n: i32) -> i32 {
+fn fac_rec(mut n: i32) -> i32 {
     match n {
-        
+        1 => 1,
+        _ => n * fac_rec(n-1)
     }
+    
 }
 
 /// Ex.4
