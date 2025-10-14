@@ -72,11 +72,23 @@ fn fac_while(mut n: i32) -> Option<i32> {
 
 /// Ex.3b(ii)
 // Use a for loop to write a 'fac_for' function, which does the same thing as your 'fac_while' function
+fn fac_for(mut n: i32) -> Option<i32> {
+    let mut res: i32 = 1;
+    for mut i in 1..=n {
+        res *= i;
+    }
+    return Some(res);
+}
 
 /// Ex.3b(iii)
 // Use recursion to write a 'fac_rec' function, which does the same thing as your 'fac_while' function
 // Try to use the match construct instead of if...else:
 // https://rust-book.cs.brown.edu/ch06-02-match.html
+fn fac_rec(n: i32) -> i32 {
+    match n {
+        
+    }
+}
 
 /// Ex.4
 // Solve this exercise by reading the Rust documentation:
