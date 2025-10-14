@@ -41,7 +41,7 @@ fn data_types() {
 /// Ex.2iii
 fn mutability() {
     // Add the missing keyword
-    let x = 5;
+    let mut x = 5;
     println!("{x}");
 
     x = 3; // Don't change this line!
