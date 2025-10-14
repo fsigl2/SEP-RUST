@@ -1,0 +1,1 @@
+/home/flo/Documents/studium/3_semester/SEPrust/code/advent-of-code/target/debug/advent-of-code: /home/flo/Documents/studium/3_semester/SEPrust/code/advent-of-code/src/day1.rs /home/flo/Documents/studium/3_semester/SEPrust/code/advent-of-code/src/main.rs
