@@ -32,9 +32,9 @@ fn data_types() {
 
     // Use if...else to print b if c is True or a if c is not True
     if c == true {
-        println!(b);
+        println!("{b}");
     } else {
-        println!(a);
+        println!("{a}");
     }
 }
 
@@ -50,8 +50,8 @@ fn mutability() {
 
 /// Ex.3a
 // Add another parameter y of the correct type and the correct return type
-fn add(x: i32, y: i32) -> i32 {
-    x+y
+fn add(x: i32, y: i32) -> Option<i32> {
+    return Some(x+y);
     // Return the sum of x and y (you can do it two different ways, but one is more idiomatic!)
 }
 
