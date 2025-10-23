@@ -1,5 +1,5 @@
 // Uncomment the following line to ignore dead code warnings:
-// #![allow(dead_code)]
+#![allow(dead_code)]
 
 // If you're stuck, check out the official Rust tutorial book and/or Rust by Example:
 // https://rust-book.cs.brown.edu/ch04-00-understanding-ownership.html
@@ -32,7 +32,7 @@ fn mut_borrow() -> Vec<i32> {
 /// HOPEFULLY THIS IS WHAT THEY WANTED ME TO DO
 // What needs to be changed in these two functions so that the code in the main function works?
 // Don't change any lines in the main function!
-fn get_char(mut s: String) -> char {
+fn get_char(s: &String) -> char {
     s.chars().last().unwrap()
 }
 
@@ -54,7 +54,7 @@ struct Person {
 fn main() {
     // Ex.2c
     let s = "Rust is the best!".to_string();
-    get_char(s);
+    get_char(&s);
     string_uppercase(&s);
 
     // Ex.2d
