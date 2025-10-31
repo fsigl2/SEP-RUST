@@ -1,0 +1,1 @@
+/home/flo/Documents/studium/3_semester/SEPrust/code/ubungen/ex03/target/debug/ex03: /home/flo/Documents/studium/3_semester/SEPrust/code/ubungen/ex03/src/accounts.rs /home/flo/Documents/studium/3_semester/SEPrust/code/ubungen/ex03/src/main.rs
